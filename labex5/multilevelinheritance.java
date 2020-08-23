@@ -61,16 +61,18 @@ class Department extends College
     @Override
     void read()
     {
+        super.read();
         System.out.println("Enter Department:");
         dept=obj.next();
-        super.read();
+        
 
     }
     @Override
     void display()
     {
-        System.out.println("DEPARTMENT:"+dept);
         super.display();
+        System.out.println("DEPARTMENT:"+dept);
+        
     }
 }
 class Student extends Department
@@ -80,17 +82,19 @@ class Student extends Department
     void read()
     {
         
+        super.read();
         System.out.println("Enter student's name:");
         name=obj.next();
         System.out.println("Enter roll no.");
         rollno=obj.next();
-        super.read();
+        
         
     }
     @Override
     void display()
     {
-        System.out.println("STUDENT'S NAME:"+name+"\nROLL NO."+rollno);
         super.display();
+        System.out.println("STUDENT'S NAME:"+name+"\nROLL NO."+rollno);
+        
     }
 }
